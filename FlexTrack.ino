@@ -1,3 +1,4 @@
+
 /*------------------------------------------------------------------------------------------------------*\
 |                                                                                                        |
 | New tracker code that can be simply rebuilt for various hardware designs.  e.g. serial or i2c GPS,     |
@@ -7,7 +8,7 @@
 | Configuration is using #defines near the top of the file.  These control which other modules get       |
 | used and linked in, and configure those modules (e.g. radio frequency).                                |
 |                                                                                                        |
-| V0.00   First stab                                                                                     |
+| V0.00   First stab   x                                                                                  |
 |                                                                                                        |
 \*------------------------------------------------------------------------------------------------------*/
 
@@ -18,8 +19,8 @@
 // Edit this section to choose the hardware design and set your payload ID etc
 
 // CHOOSE BOARD (comment out one of these only)
-#define HABDUINO
-// #define UAVANUT-LORA
+// #define HABDUINO
+#define UAVANUT-LORA
 // #define HS_APRS_300
 // #define HS_RTTY_300      
 
@@ -33,14 +34,14 @@
 #define POWERSAVING	                      // Comment out to disable GPS power saving
 
 // LORA settings
-#define LORA_PAYLOAD_ID   "CHANGE_ME"            // Do not use spaces.
+#define LORA_PAYLOAD_ID   "ICARUS"            // Do not use spaces.
 #define LORA_SLOT            0
 #define LORA_REPEAT_SLOT_1   0
 #define LORA_REPEAT_SLOT_2   0
 #define LORA_FREQUENCY       434.450
 #define LORA_ID              1
 #define LORA_CYCLETIME       0                // Set to zero to send continuously
-#define LORA_MODE            0
+#define LORA_MODE            1
 #define LORA_BINARY          0
 
 // APRS settings
